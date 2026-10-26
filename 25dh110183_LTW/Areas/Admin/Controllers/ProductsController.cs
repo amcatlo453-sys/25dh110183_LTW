@@ -10,6 +10,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using _25dh110183_LTW.Models;
 
 namespace _25dh110183_LTW.Areas.Admin.Controllers
 {
@@ -42,7 +43,7 @@ namespace _25dh110183_LTW.Areas.Admin.Controllers
                 products = products.Where(p => p.ProductPrice <= MaxPrice.Value);
             }
             switch (sortOrder)
-            {
+        {
                 case "name_asc":
                     products = products.OrderBy(p => p.ProductName);
                     break;
